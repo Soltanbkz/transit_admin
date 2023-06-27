@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/answers.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+</head>
+
+<body>
+  <div class="all_page">
+    <!-- SIDE BAR-->
+    <div class="side_bar">
+
+      <!-- LOGO -->
+      <div class="side_bar_logo_settings">
+        <img class="side_bar_logo" src="img/logo.png" alt="" width="40" height="40"/>
+        <p class="side_bar_logo_text"><a href="#">Aviation</a></p>
+      </div>
+
+      <!-- BURGER MENU -->
+
+      <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="50"
+        onclick="this.classList.toggle('active'), toggleBurgerContent()">
+        <path class="line top"
+            d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+        <path class="line middle" d="m 30,50 h 40" />
+        <path class="line bottom"
+            d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+    </svg>
+
+    <div class="burger-content" style="left: -100%;">
+        <div class="burger-content-element">
+            <img width="24" src="img/icons8-главная-48.png" alt="">
+            <p><a href="mainAfterSignUpAdmin.html">Главная</a></p>
+        </div>
+        <div class="burger-content-element">
+            <img width="24" src="img/icons8-студенческий-центр-48.png" alt="">
+            <p><a href="coursesAfterSignUpAdmin.html">Мои курсы</a></p>
+        </div>
+        <div class="burger-content-element">
+          <img width="24" src="img/icons8-студент-48.png" alt="">
+            <p><a href="student.html">Студенты</a></p>
+        </div>
+        <div class="burger-content-element">
+          <img width="24" src="img/icons8-администратор-40.png" alt="">
+            <p><a href="curators.html">Кураторы</a></p>
+        </div>
+        <div class="burger-content-element">
+          <img width="24" src="img/icons8-настройки-48.png" alt="">
+            <p><a href="profileSettingsAdmin.html">Настройки</a></p>
+        </div>
+        <div class="burger-content-element">
+          <img width="24" src="img/icons8-расписание-48.png" alt="">
+            <p><a href="timeTableAdmin.html">Расписание</a></p>
+        </div>
+        <div class="burger-content-element">
+          <img width="24" src="img/icons8-чат-48.png" alt="">
+            <p><a href="answers.html">Лента ответов</a></p>
+        </div>
+        <div class="burger-content-element-leave">
+          <img width="24" src="img/icons8-выйти-48.png" alt="">
+            <p><a href="index.html">Выйти</a></p>
+        </div>
+    </div>
+
+    <script src="js/burger.js"></script>
+
+      <!-- NAVIGATION LINKS-->
+      <div class="side_bar_links">
+        <div class="side_bar_courses">
+          <img class="side_bar_img" width="24" src="img/icons8-главная-48.png" alt="">
+          <p class="side_bar_text"><a href="mainAfterSignUpAdmin.html">Главная</a></p>
+        </div>
+
+        <div class="side_bar_courses">
+          <img class="side_bar_img" width="24" src="img/icons8-студенческий-центр-48.png" alt="">
+          <p class="side_bar_text"><a href="coursesAfterSignUpAdmin.html">Мои курсы</a></p>
+        </div>
+        <div class="side_bar_student">
+          <img class="side_bar_img" width="24" src="img/icons8-студент-48.png" alt="">
+          <p class="side_bar_text"><a href="student.html">Студенты</a></p>
+        </div>
+        <div class="side_bar_student">
+          <img class="side_bar_img" width="24" src="img/icons8-администратор-40.png" alt="">
+            <p class="side_bar_text"><a href="curators.html">Кураторы</a></p>
+          </div>
+        <div class="side_bar_settings">
+          <img class="side_bar_img" width="24" src="img/icons8-настройки-48.png" alt="">
+          <p class="side_bar_text"><a href="profileSettingsAdmin.html">Настройки</a></p>
+        </div>
+
+        <div class="side_bar_timeTable">
+          <img class="side_bar_img" width="24" src="img/icons8-расписание-48.png" alt="">
+          <p class="side_bar_text"><a href="timeTableAdmin.html">Расписание</a></p>
+        </div>
+        <div class="side_bar_answers side_bar_general">
+          <img class="side_bar_img" width="24" src="img/icons8-чат-48.png" alt="">
+          <p class="side_bar_text"><a href="answers.html">Лента ответов</a></p>
+        </div>
+    </div>
+
+    <!-- support-img -->
+
+    <div class="leave-button">
+      <a href="login.html"><button class="leave">Выйти</button></a> 
+     </div>
+  </div>
+
+  <!-- side-bar -->
+  <div id="mySidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
+    <a href="mainAfterSignUpAdmin.html">
+    <div class="sidebar-logo">
+      <img class="side_bar_logo" src="img/logo.png" alt="" width="40" height="40">
+      <p class="">Aviation</p>
+    </div>
+    </a>
+    <a href="mainAfterSignUpAdmin.html"><span>
+      <img  width="24" src="img/icons8-главная-48.png" alt="">
+      <span class="sidebar_text"><span >Главная</span></span></a><br>
+    <a href="coursesAfterSignUpAdmin.html">
+      <img  width="24" src="img/icons8-студенческий-центр-48.png" alt=""><span class="sidebar_text">Мои курсы</span></a>
+    </a><br>
+
+    <a href="student.html">
+      <img  width="24" src="img/icons8-студент-48.png" alt=""><span class="sidebar_text">Студенты</span></a>
+    </a><br>
+
+    <a href="student.html">
+      <img  width="24" src="img/icons8-администратор-40.png" alt=""><span class="sidebar_text">Кураторы</span></a>
+    </a><br>
+
+    <a href="coursesAfterSignUpAdmin.html">
+      <img width="24" src="img/icons8-настройки-48.png" alt="">
+      <span class="sidebar_text">Настройки</span></a>
+    </a><br>
+    <a href="timeTableAdmin.html">
+      <img  width="24" src="img/icons8-расписание-48.png" alt="">
+    <span class="sidebar_text">Расписание</span></a><br>
+    <a href="coursesAfterSignUpAdmin.html">
+      <img width="24" src="img/icons8-чат-48.png" alt=""><span class="sidebar_text">Лента ответов</span>
+    </a>
+    <a href="index.html">
+      <img  width="24" src="img/icons8-выйти-48.png" alt="">   
+      <span class="sidebar_text red">Выйти</span>
+    </a>
+  </div>
+    <!-- -->
+    <div class="content">
+
+      <!-- search-input -->
+
+      <!-- my courses -->
+
+      <div class="courses">
+
+        
+        <h2 class="my-courses-h2">Лента ответов</h2>
+
+        <div class="main-text">
+
+        <div class="df">
+        <label class="checkbox">
+            <input name="var" type="checkbox"/>
+            <span class="checkmark"></span>
+          </label>
+        <p>Только курсы, в котрых я являюсь учителем</p>
+        </div>
+
+        <div class="course-type">
+            <select>
+              <option value="option1" selected>Все уроки</option>
+              <img src="./img/risunok5 6.png" alt="" style="width: 40px;"/>
+              <option value="option2">Дедлайн сегодня</option>
+              <option value="option3">Дедлайн завтра</option>
+            </select>
+          </div>
+
+          <div class="course-type">
+            <select>
+              <option value="option1" selected>Сначала старые</option>
+              <img src="./img/risunok5 6.png" alt="" style="width: 40px;"/>
+              <option value="option2">Сначала новые</option>
+            </select>
+          </div>
+
+          <div class="course-type">
+            <select>
+              <option value="option1" selected>Непрочитанные</option>
+              <img src="./img/risunok5 6.png" alt="" style="width: 40px;"/>
+              <option value="option2">Прочитанные</option>
+              <option value="option3">Принятые</option>
+              <option value="option4">Не принятые</option>
+            </select>
+          </div>
+        </div>
+
+        
+        <h2 class="my-courses-h2">Все курсы</h2>
+
+    <!-- test -->
+
+    <div class="answers">
+
+        <div class="answer">
+
+        <div class="student-answer">
+          <div class="ava">
+            <img width="50px" src="img/free-icon-user-profile-5675059.png" alt=""/>
+        </div>
+            <div class="comment">
+                <div class="df">
+                <div class="">
+                <p class="date">Авиационные. “Курс”. Модуль 2. Урок</p>
+                <p class="black"><b>Имя Фамилия. Поток. Время отправки</b></p>
+                </div>
+                <div class="button">
+                    <button>Ожидает проверки</button>
+                </div>
+                </div>
+                <div class="comment-text">
+                <p>A fast 50mm like f1.8 would help with <br> the bokeh.  I’ve been using primes as they <br> tend to get a bit sharper images.</p>
+              </div>
+              <div class="file">
+                <img width="40px" src="img/file.svg" alt=""/>
+                <p class="file-name">File name</p>
+                <p>1.5 кб</p>
+                <p class="delete-file">Удалить файл</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="reply">
+        <form action="">
+          <input type="text" placeholder="Добавить комментарий к ответу..." class="reply-input"/>
+          <button class="send"><img src="img/send.svg" alt=""/></button>
+        </form>
+      </div>
+
+        </div>
+
+        <div class="answer">
+
+            <div class="student-answer">
+              <div class="ava">
+                <img width="50px" src="img/free-icon-user-profile-5675059.png" alt=""/>
+            </div>
+                <div class="comment">
+                    <div class="df">
+                    <div class="">
+                    <p class="date">Авиационные. “Курс”. Модуль 2. Урок</p>
+                    <p class="black"><b>Имя Фамилия. Поток. Время отправки</b></p>
+                    </div>
+                    <div class="button">
+                        <button>Ожидает проверки</button>
+                    </div>
+                    </div>
+                    <div class="comment-text">
+                    <p>A fast 50mm like f1.8 would help with <br> the bokeh.  I’ve been using primes as they <br> tend to get a bit sharper images.</p>
+                  </div>
+                  <div class="file">
+                    <img width="40px" src="img/file.svg" alt=""/>
+                    <p class="file-name">File name</p>
+                    <p>1.5 кб</p>
+                    <p class="delete-file">Удалить файл</p>
+                  </div>
+                </div>
+            </div>
+    
+            <div class="reply">
+            <form action="">
+              <input type="text" placeholder="Добавить комментарий к ответу..." class="reply-input"/>
+              <button class="send"><img src="img/send.svg" alt=""/></button>
+            </form>
+          </div>
+
+            </div>
+
+    </div>
+
+    </div>
+
+      </div>
+
+    </div>
+</div>
+
+<script src="js/side-bar.js"></script>
+
+</body>
+
+</html>
+
